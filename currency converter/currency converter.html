@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="demo.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav-box">
+            <h1>Currency Converter</h1>
+        </div>
+        <div class="calculator-box">
+            <h2>Calculator</h2>
+            <div class="converter">
+                <input type="number" id="amount" placeholder="Enter amount">
+                <select id="fromCurrency">
+                    <option value="INR">INR</option>
+                    <option value="GBP">GBP</option>
+                    <option value="EUR">EUR</option>
+                    <option value="USD">USD</option>
+                </select>
+                <select id="toCurrency">
+                    <option value="INR">INR</option>
+                    <option value="GBP">GBP</option>
+                    <option value="EUR">EUR</option>
+                    <option value="USD">USD</option>
+                </select>
+                <button onclick="convert()">Convert</button>
+            </div>
+            <div class="result" id="result"></div>
+        </div>
+        <div class="description">
+            <p>This currency converter allows you to quickly and easily convert between Indian Rupees (INR), 
+            British Pounds (GBP), Euros (EUR), and US Dollars (USD).
+            Simply enter the amount you want to convert, select the currency you want to convert from and to, 
+            and click the "Convert" button.
+            Get accurate conversions in an instant!</p>
+        </div>
+    </div>
+    <script src="demo.js"></script>
+</body>
+</html>
